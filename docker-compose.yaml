@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nextjstest:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: klerok96/nextjstest:v1
+    ports:
+      - "80:3000"
